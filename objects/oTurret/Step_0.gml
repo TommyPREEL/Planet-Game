@@ -26,6 +26,3 @@ var s = dsin(planet.image_angle);
 // Appliquer la transformation pour calculer la nouvelle position de la tourelle
 x = planet.x + x0 * c + y0 * s;
 y = planet.y - x0 * s + y0 * c;
-
-// Orienter la tourelle pour qu'elle reste "droite" par rapport à la planète
-//image_angle = planet.image_angle;

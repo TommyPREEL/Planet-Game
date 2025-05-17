@@ -1,3 +1,4 @@
+// Variable de tir
 hasShooted = false
 
 // Trouver la planète
