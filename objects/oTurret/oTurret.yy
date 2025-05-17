@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oPlanet",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oTurret",
+  "eventList":[],
   "managed":true,
-  "name":"oPlanet",
+  "name":"oTurret",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlanet",
-    "path":"sprites/sPlanet/sPlanet.yy",
+    "name":"sTurret",
+    "path":"sprites/sTurret/sTurret.yy",
   },
   "spriteMaskId":null,
   "visible":true,

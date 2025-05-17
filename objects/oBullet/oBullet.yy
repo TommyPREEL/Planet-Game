@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oPlanet",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oBullet",
+  "eventList":[],
   "managed":true,
-  "name":"oPlanet",
+  "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlanet",
-    "path":"sprites/sPlanet/sPlanet.yy",
+    "name":"sBullet",
+    "path":"sprites/sBullet/sBullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
