@@ -26,3 +26,4 @@ var s = dsin(planet.image_angle);
 // Appliquer la transformation pour calculer la nouvelle position de la tourelle
 x = planet.x + x0 * c + y0 * s;
 y = planet.y - x0 * s + y0 * c;
+
