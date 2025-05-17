@@ -16,6 +16,30 @@ if (keyboard_check(vk_right)) {
     with (oPlanet) {
         image_angle += 2; // Tourne à gauche
     }
+} else if(keyboard_check_pressed(ord("B"))) {
+    room_goto(rPlanet);
 } else {
 	sprite_index = sPersonIdle // Active le sprint de base
 }
+
+if (place_meeting(x, y, oPlanet)) {
+    var marker = instance_place(x, y, obj_town_marker);
+    
+    if (keyboard_check_pressed(ord("E"))) {
+        // Store which town we’re entering
+        global.current_town_id = marker.town_id;
+        
+        // Go to the town room
+        room_goto(rTown);
+    }
+}
+
+switch (global.current_town_id) {
+    case "town1":
+        // Load layout for town 1
+        break;
+    case "town2":
+        // TBD
+        break;
+}
+
