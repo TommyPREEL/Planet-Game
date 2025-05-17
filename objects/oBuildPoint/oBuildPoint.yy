@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oTurret",
+  "%Name":"oBuildPoint",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTurret",
+  "name":"oBuildPoint",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTurret",
-    "path":"sprites/sTurret/sTurret.yy",
+    "name":"sBuildPoint",
+    "path":"sprites/sBuildPoint/sBuildPoint.yy",
   },
   "spriteMaskId":null,
   "visible":true,

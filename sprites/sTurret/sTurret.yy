@@ -54,7 +54,7 @@
   "origin":9,
   "parent":{
     "name":"Turret",
-    "path":"folders/Sprites/Turret.yy",
+    "path":"folders/Sprites/Structures/Turret.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

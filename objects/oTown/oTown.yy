@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oTurret",
+  "%Name":"oTown",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTurret",
+  "name":"oTown",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTurret",
-    "path":"sprites/sTurret/sTurret.yy",
+    "name":"sTown",
+    "path":"sprites/sTown/sTown.yy",
   },
   "spriteMaskId":null,
   "visible":true,
