@@ -1,0 +1,1 @@
+hasShooted = false
