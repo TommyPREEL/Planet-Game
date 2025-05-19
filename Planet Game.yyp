@@ -58,6 +58,7 @@
   "name":"Planet Game",
   "resources":[
     {"id":{"name":"pTexteMenu","path":"fonts/pTexteMenu/pTexteMenu.yy",},},
+    {"id":{"name":"oBarHP","path":"objects/oBarHP/oBarHP.yy",},},
     {"id":{"name":"pTexteMenuLarge","path":"fonts/pTexteMenuLarge/pTexteMenuLarge.yy",},},
     {"id":{"name":"pTexteMenuSmall","path":"fonts/pTexteMenuSmall/pTexteMenuSmall.yy",},},
     {"id":{"name":"oBarHP","path":"objects/oBarHP/oBarHP.yy",},},
@@ -114,6 +115,8 @@
     {"id":{"name":"sButtonKeybind","path":"sprites/sButtonKeybind/sButtonKeybind.yy",},},
     {"id":{"name":"sButtonPauseActif","path":"sprites/sButtonPauseActif/sButtonPauseActif.yy",},},
     {"id":{"name":"sButtonPauseInactif","path":"sprites/sButtonPauseInactif/sButtonPauseInactif.yy",},},
+    {"id":{"name":"sEventBar","path":"sprites/sEventBar/sEventBar.yy",},},
+    {"id":{"name":"sLifeBar","path":"sprites/sLifeBar/sLifeBar.yy",},},
     {"id":{"name":"sCheckBoxEmpty","path":"sprites/sCheckBoxEmpty/sCheckBoxEmpty.yy",},},
     {"id":{"name":"sCheckBoxOK","path":"sprites/sCheckBoxOK/sCheckBoxOK.yy",},},
     {"id":{"name":"sEventBar","path":"sprites/sEventBar/sEventBar.yy",},},
