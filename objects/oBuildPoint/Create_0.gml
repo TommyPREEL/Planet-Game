@@ -1,10 +1,11 @@
-planet_id = instance_find(oPlanet, 0);
 is_buildable = true;
-// Get dx/dy from planet center
+planet_id = instance_find(oPlanet, 0); // à adapter si plusieurs planètes
+
+// Position relative à la planète
 var dx = x - planet_id.x;
 var dy = y - planet_id.y;
 
-// UNROTATE the player's position (undo planet's current angle)
+// "Dérotation" pour obtenir des coordonnées locales fixes
 var c = dcos(-planet_id.image_angle);
 var s = dsin(-planet_id.image_angle);
 

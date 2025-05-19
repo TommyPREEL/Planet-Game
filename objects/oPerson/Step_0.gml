@@ -1,6 +1,13 @@
+if (global.is_paused) {
+    image_speed = 0;
+    exit; // empêche de bouger ou de faire quoi que ce soit en pause
+} else {
+    image_speed = default_speed;
+}
+
 
 // Flèche de droite appuyée
-if (keyboard_check(vk_right)) {
+if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
 	sprite_index = sPersonWalk // Active le sprint walk
 	image_xscale = 1; // Tourne le sprite vers la droite
 	
@@ -9,7 +16,7 @@ if (keyboard_check(vk_right)) {
         image_angle -= 2; // Tourne à gauche
     }
 // Flèche de gauche appuyée
-} else if (keyboard_check(vk_left)) {
+} else if (keyboard_check(vk_left) || keyboard_check(ord("Q"))) {
 	sprite_index = sPersonWalk // Active le sprint walk
 	image_xscale = -1; // Tourne le sprite vers la gauche
 	

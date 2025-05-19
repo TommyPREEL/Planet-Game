@@ -1,3 +1,11 @@
+if (global.is_paused) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = default_speed;
+}
+
+
 //// Tir & créer la balle
 if (image_index >= 7 && !hasShooted) { 
     // Crée la balle

@@ -1,3 +1,10 @@
+if (global.is_paused) {
+    image_speed = 0;
+} else {
+    image_speed = 1; // ou la valeur normale de vitesse d’animation
+}
+
+
 if (instance_exists(planet_id)) {
     // Recalcule la position par rotation des coordonnées locales
     var c = dcos(planet_id.image_angle);
