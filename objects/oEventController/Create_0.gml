@@ -17,7 +17,8 @@ function AddEvent(_name, _weight, _difficulty, _type, _unique, _cooldown, _callb
 }
 
 AddEvent("Meteor Strike", 100, 1, "bad", false, 60, scrMeteorStrike);
-AddEvent("Alien Attack", 30, 1, "bad", false, 0, scrAlienAttack);
+AddEvent("Alien Attack", 30, 1, "bad", true, 0, scrAlienAttack);
+AddEvent("Airdrop", 10, 1, "good", false, 1000, scrAirdrop);
 
 /// Helper ----------------------------------------------------
 function EventIsEligible(ev)
