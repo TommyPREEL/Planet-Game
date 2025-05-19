@@ -11,8 +11,8 @@
   "name":"oMeteor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bad",
-    "path":"folders/Objets/Events/Bad.yy",
+    "name":"Objets",
+    "path":"folders/Objets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

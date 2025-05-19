@@ -9,8 +9,8 @@
   "name":"oEventController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/Objets/Controllers.yy",
+    "name":"Objets",
+    "path":"folders/Objets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,8 +6,8 @@
   "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ammo",
-    "path":"folders/Objets/Deployables/Defense/Ammo.yy",
+    "name":"Objets",
+    "path":"folders/Objets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

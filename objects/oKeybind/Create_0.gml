@@ -16,7 +16,6 @@ for (var i = 0; i < binds_count; i++) {
 
     // Bouton "Modifier"
     var btn_modify = instance_create_layer(col_modify_x, y_pos, "UI", oButtonModify);
-	btn_modify.image_xscale = 2
     btn_modify.button_index = i;
 
     // Bouton "Réinitialiser"

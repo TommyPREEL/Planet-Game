@@ -9,8 +9,8 @@
   "name":"oTown",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ressources",
-    "path":"folders/Objets/Deployables/Ressources.yy",
+    "name":"Objets",
+    "path":"folders/Objets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

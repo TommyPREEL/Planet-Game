@@ -9,8 +9,8 @@
   "name":"oMusicPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Musiques",
-    "path":"folders/Objets/Musiques.yy",
+    "name":"Musique",
+    "path":"folders/Objets/Musique.yy",
   },
   "parentObjectId":null,
   "persistent":false,
