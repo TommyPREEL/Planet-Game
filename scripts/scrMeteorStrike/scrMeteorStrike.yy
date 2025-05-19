@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrMeteorStrike",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Events",
+    "path":"folders/Scripts/Events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

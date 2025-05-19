@@ -1,5 +1,4 @@
 if (keyboard_check_pressed(ord("R"))) {
-	show_debug_message("hello");
     with (oEventController) TriggerRandomEvent();
 }
 

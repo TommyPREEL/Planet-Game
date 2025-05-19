@@ -1,5 +1,13 @@
+if (global.is_paused) {
+    image_speed = 0;
+    exit;
+} else {
+    image_speed = default_speed;
+}
+
 //// Tir & créer la balle
 if (image_index >= 7 && !hasShooted) { 
+	show_debug_message("Hello")
     // Crée la balle
     var bullet = instance_create_layer(x, y, "Instances", oBullet);
 	hasShooted = true;
@@ -7,15 +15,13 @@ if (image_index >= 7 && !hasShooted) {
     // Oriente la balle dans la bonne direction (optionnel)
     bullet.direction = image_angle; 
     bullet.speed = 8; // Ajuste la vitesse selon le gameplay
-
-    // Marque que le tir est déjà fait pour cette animation
-    hasShooted = true;
 }
 
 // Reset pour la prochaine animation
-if (image_index == 0) {
+if (image_index <= 1) {
     hasShooted = false;
 }
+	
 
 //// Calcul pour coller à la planète
 if (instance_exists(planet_id)) {

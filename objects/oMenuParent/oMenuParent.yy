@@ -13,8 +13,8 @@
   "name":"oMenuParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"MenuMain",
-    "path":"folders/Objets/Menu/MenuMain.yy",
+    "name":"Menu",
+    "path":"folders/Objets/Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
