@@ -1,20 +1,6 @@
 // Initialisation : aucune touche en cours d'édition
 editing_key_index = -1;
 
-// Valeurs par défaut
-global.default_key_left = vk_left;
-global.default_key_right = vk_right;
-global.default_key_add_structure = ord("E");
-global.default_key_select_turret = ord("1");
-global.default_key_select_house = ord("2");
-
-// Valeurs modifiables actuelles (si non déjà définies ailleurs)
-global.key_left = global.default_key_left;
-global.key_right = global.default_key_right;
-global.key_add_structure = global.default_key_add_structure;
-global.key_select_turret = global.default_key_select_turret;
-global.key_select_house = global.default_key_select_house;
-
 // Positions des colonnes de boutons
 var col_modify_x = room_width * 0.65;
 var col_reset_x = room_width * 0.80;

@@ -5,9 +5,10 @@ if (global.is_paused) {
     image_speed = default_speed;
 }
 
+show_debug_message(global.key_right)
 
 // Flèche de droite appuyée
-if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
+if (keyboard_check(global.key_right) || keyboard_check(ord("D"))) {
 	sprite_index = sPersonWalk // Active le sprint walk
 	image_xscale = 1; // Tourne le sprite vers la droite
 	
@@ -16,7 +17,7 @@ if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
         image_angle -= 2; // Tourne à gauche
     }
 // Flèche de gauche appuyée
-} else if (keyboard_check(vk_left) || keyboard_check(ord("Q"))) {
+} else if (keyboard_check(global.key_left) || keyboard_check(ord("Q"))) {
 	sprite_index = sPersonWalk // Active le sprint walk
 	image_xscale = -1; // Tourne le sprite vers la gauche
 	
@@ -28,7 +29,7 @@ if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
 	sprite_index = sPersonIdle // Active le sprint de base
 }
 
-if (keyboard_check_pressed(ord("E"))) {
+if (keyboard_check_pressed(global.key_add_structure)) {
     var nearest   = noone;
     var min_dist  = 9999999;               // start very large
 

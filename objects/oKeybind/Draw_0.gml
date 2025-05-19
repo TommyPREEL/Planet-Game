@@ -30,7 +30,7 @@ for (var i = 0; i < array_length(binds); i++) {
     var key = binds[i][1];
     var y_line = base_y + i * line_height;
 
-    var key_str = (editing_key_index == i) ? "[...]" : string(keyname(key));
+    var key_str = (editing_key_index == i) ? "[xxx]" : string(keyname(key));
 
     draw_text(col_action_x, y_line, label);
     draw_text(col_key_x, y_line, key_str);
