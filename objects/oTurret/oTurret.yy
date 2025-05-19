@@ -9,8 +9,8 @@
   "name":"oTurret",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Defense",
+    "path":"folders/Objets/Deployables/Defense.yy",
   },
   "parentObjectId":null,
   "persistent":false,

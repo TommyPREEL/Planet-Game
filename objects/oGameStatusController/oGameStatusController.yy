@@ -9,8 +9,8 @@
   "name":"oGameStatusController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Controllers",
+    "path":"folders/Objets/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
