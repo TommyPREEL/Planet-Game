@@ -38,7 +38,7 @@ if (keyboard_check_pressed(global.key_add_structure)) {
         if (is_buildable) {
             var d = point_distance(x, y, oPerson.x, oPerson.y);
 
-            if (d < DETECTION_RADIUS && d < min_dist) {
+            if (d < player.detection_radius && d < min_dist) {
                 min_dist = d;
                 nearest  = id;
             }
