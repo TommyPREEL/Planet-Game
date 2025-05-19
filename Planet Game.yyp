@@ -79,6 +79,7 @@
     {"id":{"name":"scrAlienAttack","path":"scripts/scrAlienAttack/scrAlienAttack.yy",},},
     {"id":{"name":"scrMeteorStrike","path":"scripts/scrMeteorStrike/scrMeteorStrike.yy",},},
     {"id":{"name":"sBackAudio","path":"sounds/sBackAudio/sBackAudio.yy",},},
+    {"id":{"name":"sMeteorCrash","path":"sounds/sMeteorCrash/sMeteorCrash.yy",},},
     {"id":{"name":"sAudioLvl1","path":"sprites/sAudioLvl1/sAudioLvl1.yy",},},
     {"id":{"name":"sAudioLvl2","path":"sprites/sAudioLvl2/sAudioLvl2.yy",},},
     {"id":{"name":"sAudioLvl3","path":"sprites/sAudioLvl3/sAudioLvl3.yy",},},
