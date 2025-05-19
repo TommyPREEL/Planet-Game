@@ -11,8 +11,14 @@ if (global.selected_build_point != noone) {
                                 global.selected_build_point.x,
                                 global.selected_build_point.y);
 
-        if (d > DETECTION_RADIUS) {
+        if (d > player.detection_radius) {
             global.selected_build_point = noone;
         }
     }
+}
+
+// Check la vie du joueur
+if (player.hp <= 0) {
+	show_message("You Died!"); // CHANGER PAR DEATH PAGE
+    room_restart();
 }

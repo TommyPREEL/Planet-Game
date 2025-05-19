@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scrCreateBar",
+  "%Name":"scrDmg",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scrCreateBar",
+  "name":"scrDmg",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
