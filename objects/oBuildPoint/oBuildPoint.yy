@@ -11,8 +11,8 @@
   "name":"oBuildPoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Specials",
+    "path":"folders/Objets/Deployables/Specials.yy",
   },
   "parentObjectId":null,
   "persistent":false,
