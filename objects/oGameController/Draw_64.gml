@@ -6,12 +6,30 @@ if (global.selected_build_point != noone) {
 }
 
 if (keyboard_check_pressed(ord("1")) && global.selected_build_point != noone) {
-	instance_create_layer(px, py - 16, "Instances", oTurret);
-	instance_destroy(global.selected_build_point);
-    global.selected_build_point = noone;
+	ManageInstance(oTurret);
 }
 if (keyboard_check_pressed(ord("2")) && global.selected_build_point != noone) {
-	instance_create_layer(px, py - 16, "Instances", oTown);
-    instance_destroy(global.selected_build_point);
+	ManageInstance(oTown);
+}
+
+
+function ManageInstance(ObjectType)
+{
+	var build_point = global.selected_build_point;
+	var planet = oPlanet; // à adapter si plusieurs planètes
+
+	var angle = point_direction(planet.x, planet.y, build_point.x, build_point.y);
+	var distance = point_distance(planet.x, planet.y, build_point.x, build_point.y);
+
+	// Crée l'objet à l’angle et distance
+	var obj = instance_create_layer(planet.x + lengthdir_x(distance, angle),
+	                                planet.y + lengthdir_y(distance, angle),
+	                                "Instances",
+	                                ObjectType); // ou oTown selon le cas
+
+	obj.orbit_angle = angle;
+	obj.orbit_distance = distance;
+	obj.planet = planet; // référence à la planète
+	instance_destroy(global.selected_build_point);
     global.selected_build_point = noone;
 }
