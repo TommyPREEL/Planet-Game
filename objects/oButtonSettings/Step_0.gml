@@ -1,0 +1,1 @@
+visible = (room == rMenu || (room == rPlanet && global.is_paused));
