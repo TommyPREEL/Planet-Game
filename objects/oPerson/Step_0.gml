@@ -29,7 +29,6 @@ if (keyboard_check_pressed(ord("E"))) {
     with (oBuildPoint) {
         if (is_buildable) {
             var d = point_distance(x, y, oPerson.x, oPerson.y);
-            show_debug_message("BP id " + string(id) + "  dist " + string(d));
 
             if (d < DETECTION_RADIUS && d < min_dist) {
                 min_dist = d;
