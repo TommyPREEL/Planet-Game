@@ -18,7 +18,6 @@ for (var i = 0; i < binds_count; i++) {
     // Clic sur "Modifier"
     if (mx > col_modify_x && mx < col_modify_x + mod_w && my > y_line && my < y_line + text_h) {
         editing_key_index = i;
-        show_debug_message("Modifier clicked on index " + string(i));
         return;  // Stop pour ne pas traiter d'autres clics
     }
 
@@ -31,7 +30,6 @@ for (var i = 0; i < binds_count; i++) {
             case 3: global.key_select_turret = global.default_key_select_turret; break;
             case 4: global.key_select_house = global.default_key_select_house; break;
         }
-        show_debug_message("Réinitialiser clicked on index " + string(i));
         return;
     }
 }

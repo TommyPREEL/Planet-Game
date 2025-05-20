@@ -5,8 +5,6 @@ if (global.is_paused) {
     image_speed = default_speed;
 }
 
-show_debug_message(global.key_right)
-
 // Flèche de droite appuyée
 if (keyboard_check(global.key_right) || keyboard_check(ord("D"))) {
 	sprite_index = sPersonWalk // Active le sprint walk

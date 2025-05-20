@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-index = -1; // Par sécurité
+var index = -1; // Par sécurité
 
 // Si "button_index" est transmis depuis oKeybind :
 if (variable_instance_exists(id, "button_index")) {
@@ -12,7 +12,6 @@ oKeybind.editing_key_index = index;
 
 // oButtonModify - Left Pressed Event
 oKeybind.editing_key_index = button_index;
-show_debug_message("Modifier pressed for index " + string(button_index));
 
 // oButtonReset - Left Pressed Event
 switch (button_index) {
