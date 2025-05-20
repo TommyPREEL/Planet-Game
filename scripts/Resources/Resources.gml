@@ -6,12 +6,12 @@ function AddResource(_name, _amount, _max, _regen, _regen_rate) {
         regen      : _regen,        // bool: régénère ou non
         regen_rate : _regen_rate    // taux de régénération par tick (ou frame)
     };
-    ds_list_add(resource_list, res);
+    ds_list_add(global.resource_list, res);
 }
 
 function GetResource(_name) {
-    for (var i = 0; i < ds_list_size(resource_list); ++i) {
-        var r = resource_list[| i];
+    for (var i = 0; i < ds_list_size(global.resource_list); ++i) {
+        var r = global.resource_list[| i];
         if (r.name == _name) return r;
     }
     return noone;
