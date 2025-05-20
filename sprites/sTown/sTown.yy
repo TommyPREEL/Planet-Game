@@ -23,7 +23,7 @@
   ],
   "name":"sTown",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Cities",
     "path":"folders/Sprites/Structures/Cities.yy",
@@ -78,7 +78,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":32,
+    "yorigin":23,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
