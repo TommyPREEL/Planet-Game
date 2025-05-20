@@ -30,10 +30,4 @@ if (barre != noone) {
 			global.master_volume = clamp(position_rel, 0, 1);
         }
     }
-}
-	
-// Calcul du volume (0 à 1) en fonction de la position du curseur
-//var position_rel = (x - limite_gauche) / (limite_droite - limite_gauche);
-//global.master_volume = clamp(position_rel, 0, 1);
-	
-	
+}	

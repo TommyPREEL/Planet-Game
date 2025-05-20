@@ -1,5 +1,3 @@
-show_debug_message(global.master_volume)
-
 if (global.master_volume != 0) {
 	global.volume = global.master_volume
 	global.master_volume = 0;
