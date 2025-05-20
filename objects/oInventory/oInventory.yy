@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oButtonQuit",
+  "%Name":"oInventory",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":53,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oButtonQuit",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oMenuParent","path":"objects/oMenuParent/oMenuParent.yy",},"propertyId":{"name":"button_text","path":"objects/oMenuParent/oMenuParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Quit",},
-  ],
+  "name":"oInventory",
+  "overriddenProperties":[],
   "parent":{
-    "name":"MenuMain",
-    "path":"folders/Objets/UI/Menu/MenuMain.yy",
+    "name":"UI",
+    "path":"folders/Objets/UI.yy",
   },
   "parentObjectId":{
     "name":"oMenuParent",
@@ -36,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMenuButton",
-    "path":"sprites/sMenuButton/sMenuButton.yy",
+    "name":"sInventoryClose",
+    "path":"sprites/sInventoryClose/sInventoryClose.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -28,3 +28,5 @@ if (!variable_global_exists("master_volume")) {
 global.volume = 0;
 
 global.is_paused = false;
+
+global.selected_item = "";

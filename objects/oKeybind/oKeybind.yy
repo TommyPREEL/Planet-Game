@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Keybinds",
-    "path":"folders/Objets/Menu/MenuSettings/Keybinds.yy",
+    "path":"folders/Objets/UI/Menu/MenuSettings/Keybinds.yy",
   },
   "parentObjectId":null,
   "persistent":false,
