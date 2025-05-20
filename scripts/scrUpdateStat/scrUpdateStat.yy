@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrUpdateStat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrUpdateStat",
+  "parent":{
+    "name":"Status",
+    "path":"folders/Scripts/Status.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

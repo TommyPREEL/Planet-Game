@@ -11,4 +11,5 @@ if (instance_exists(oCameraController)) {
 var snd = sMeteorCrash;
 audio_sound_set_track_position(snd, 4.17);
 audio_play_sound(snd, 1, false);
+scrDmg("HP",20);
 instance_destroy();

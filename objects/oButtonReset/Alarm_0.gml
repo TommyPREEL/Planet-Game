@@ -8,9 +8,6 @@ if (variable_instance_exists(id, "button_index")) {
     index = button_index;
 }
 
-show_debug_message(global.default_key_left);
-show_debug_message(global.key_left)
-
 // oButtonReset - Left Pressed Event
 switch (index) {
     case 0: global.key_left = global.default_key_left; break;

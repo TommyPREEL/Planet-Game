@@ -1,1 +1,0 @@
-image_index = player.hp

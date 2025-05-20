@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrCreateBars",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrCreateBars",
+  "parent":{
+    "name":"Status",
+    "path":"folders/Scripts/Status.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -12,7 +12,6 @@ oKeybind.editing_key_index = index;
 
 // oButtonModify - Left Pressed Event
 oKeybind.editing_key_index = button_index;
-show_debug_message("Modifier pressed for index " + string(button_index));
 
 // oButtonReset - Left Pressed Event
 switch (button_index) {
