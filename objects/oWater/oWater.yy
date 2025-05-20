@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oPerson",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oWater",
+  "eventList":[],
   "managed":true,
-  "name":"oPerson",
+  "name":"oWater",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Good",
+    "path":"folders/Objets/Events/Good.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPersonTest",
-    "path":"sprites/sPersonTest/sPersonTest.yy",
+    "name":"sWater",
+    "path":"sprites/sWater/sWater.yy",
   },
   "spriteMaskId":null,
   "visible":true,
