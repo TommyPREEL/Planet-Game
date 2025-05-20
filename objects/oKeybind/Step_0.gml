@@ -26,7 +26,6 @@ function SetKey(key) {
 	if (keyboard_check_pressed(key)) {
         if (editing_key_index != -1) {
 			if (key != -1 && key != vk_escape) {
-				show_debug_message("Key pressed: " + string(key));  
 		        switch (editing_key_index) {
 		            case 0: global.key_left = key; break;
 		            case 1: global.key_right = key; break;

@@ -1,0 +1,1 @@
+visible = (room == rPlanet && global.is_paused);

@@ -7,8 +7,8 @@ draw_set_color(c_white);
 
 var col_action_x  = room_width * 0.10;
 var col_key_x     = room_width * 0.40;
-var col_modify_x  = room_width * 0.65;
-var col_reset_x   = room_width * 0.80;
+var col_modify_x  = room_width * 0.60;
+var col_reset_x   = room_width * 0.82;
 var base_y        = room_height * 0.2;
 var line_height   = 40;
 
@@ -23,6 +23,8 @@ var binds = [
 // En-têtes
 draw_text(col_action_x, base_y - line_height, "Action");
 draw_text(col_key_x, base_y - line_height, "Touche");
+draw_text(col_modify_x, base_y - line_height, "Modification");
+draw_text(col_reset_x, base_y - line_height, "Reset");
 
 // Lignes
 for (var i = 0; i < array_length(binds); i++) {
@@ -30,8 +32,8 @@ for (var i = 0; i < array_length(binds); i++) {
     var key = binds[i][1];
     var y_line = base_y + i * line_height;
 
-    var key_str = (editing_key_index == i) ? "[xxx]" : string(keyname(key));
-
+    var key_str = (editing_key_index == i) ? "[...]" : string(keyname(key));
+	
     draw_text(col_action_x, y_line, label);
     draw_text(col_key_x, y_line, key_str);
 }

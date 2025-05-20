@@ -7,7 +7,6 @@ if (global.is_paused) {
 
 //// Tir & créer la balle
 if (image_index >= 7 && !hasShooted) { 
-	show_debug_message("Hello")
     // Crée la balle
     var bullet = instance_create_layer(x, y, "Instances", oBullet);
 	hasShooted = true;

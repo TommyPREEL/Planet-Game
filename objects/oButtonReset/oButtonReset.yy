@@ -7,7 +7,7 @@
   "managed":true,
   "name":"oButtonReset",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oMenuParent","path":"objects/oMenuParent/oMenuParent.yy",},"propertyId":{"name":"button_text","path":"objects/oMenuParent/oMenuParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Réinitialiser",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oMenuParent","path":"objects/oMenuParent/oMenuParent.yy",},"propertyId":{"name":"button_text","path":"objects/oMenuParent/oMenuParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Reinitialiser",},
   ],
   "parent":{
     "name":"Keybinds",
@@ -28,7 +28,12 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":64.0,"y":0.0,},
+    {"x":64.0,"y":64.0,},
+    {"x":0.0,"y":64.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",

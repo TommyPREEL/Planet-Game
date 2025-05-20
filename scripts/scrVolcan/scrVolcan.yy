@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrVolcan",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrVolcan",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Scripts/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
