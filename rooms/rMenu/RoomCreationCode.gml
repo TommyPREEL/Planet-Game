@@ -28,3 +28,12 @@ if (!variable_global_exists("master_volume")) {
 global.volume = 0;
 
 global.is_paused = false;
+
+window_set_fullscreen(false);
+var w = display_get_width();
+var h = display_get_height();
+
+window_set_size(w, h);
+window_set_position(0, 0);
+
+display_set_gui_size(w, h);
