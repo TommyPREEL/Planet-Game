@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oSlideBarMain",
+  "%Name":"oResourcePopup",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSlideBarMain",
+  "name":"oResourcePopup",
   "overriddenProperties":[],
   "parent":{
-    "name":"MenuSettings",
-    "path":"folders/Objets/Menu/MenuSettings.yy",
+    "name":"Popups",
+    "path":"folders/Objets/Popups.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sBarVolume",
-    "path":"sprites/sBarVolume/sBarVolume.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

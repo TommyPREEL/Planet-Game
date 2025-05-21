@@ -8,14 +8,7 @@ if (instance_exists(oCameraController)) {
 	    cam.shake_timer = 20;
 	}
 }
-
-if (global.master_volume > 0) {
-    var snd_instance = audio_play_sound(sMeteorCrash, 1, false);
-    audio_sound_set_track_position(snd_instance, 4.17);
-    audio_sound_gain(snd_instance, global.master_volume, 0);
-} else {
-    // Volume 0, ne joue pas le son
-    // Ou ne fait rien
-}
-
+var snd = sMeteorCrash;
+audio_sound_set_track_position(snd, 4.17);
+audio_play_sound(snd, 1, false);
 instance_destroy();

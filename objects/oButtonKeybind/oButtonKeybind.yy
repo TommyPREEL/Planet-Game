@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"MenuSettings",
-    "path":"folders/Objets/UI/Menu/MenuSettings.yy",
+    "path":"folders/Objets/Menu/MenuSettings.yy",
   },
   "parentObjectId":{
     "name":"oMenuParent",

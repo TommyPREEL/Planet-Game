@@ -8,8 +8,8 @@
   "name":"oButtonBack",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objets/UI.yy",
+    "name":"Menu",
+    "path":"folders/Objets/Menu.yy",
   },
   "parentObjectId":{
     "name":"oMenuParent",
