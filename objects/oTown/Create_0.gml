@@ -11,4 +11,3 @@ var s = dsin(-planet_id.image_angle);
 x0 = dx * c - dy * s;
 y0 = dx * s + dy * c;
 
-AddToResource("Town", 1);
