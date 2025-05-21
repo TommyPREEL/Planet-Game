@@ -12,7 +12,7 @@
   ],
   "parent":{
     "name":"MenuPause",
-    "path":"folders/Objets/Menu/MenuPause.yy",
+    "path":"folders/Objets/UI/Menu/MenuPause.yy",
   },
   "parentObjectId":{
     "name":"oMenuParent",

@@ -12,7 +12,7 @@
   ],
   "parent":{
     "name":"MenuMain",
-    "path":"folders/Objets/Menu/MenuMain.yy",
+    "path":"folders/Objets/UI/Menu/MenuMain.yy",
   },
   "parentObjectId":{
     "name":"oMenuParent",

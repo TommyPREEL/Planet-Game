@@ -44,3 +44,18 @@ if (eruption_started && image_index >= 5.9) {
     show_debug_message("Fin de l'éruption, suppression du volcan");
     instance_destroy();
 }
+
+if (keyboard_check_pressed(vk_space)) {
+    if (instance_exists(oInventory) && oInventory.selected_item == "oWater") {
+        // L'utilisateur a sélectionné de l'eau et interagit avec le volcan
+        show_debug_message("Le volcan est éteint !");
+        
+        // Empêche l’éruption
+        eruption_started = false;
+        volcano_extinguished = true;
+        image_index = 6; // Passe directement à la fin de l’animation
+
+        // Vide l’objet sélectionné après usage
+        oInventory.selected_item = "";
+    }
+}

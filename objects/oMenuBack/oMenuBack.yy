@@ -6,8 +6,8 @@
   "name":"oMenuBack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objets/Menu.yy",
+    "name":"MenuSettings",
+    "path":"folders/Objets/UI/Menu/MenuSettings.yy",
   },
   "parentObjectId":null,
   "persistent":false,
