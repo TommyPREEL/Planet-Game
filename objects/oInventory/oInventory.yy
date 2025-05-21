@@ -20,7 +20,6 @@
     "name":"oMenuParent",
     "path":"objects/oMenuParent/oMenuParent.yy",
   },
-  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
