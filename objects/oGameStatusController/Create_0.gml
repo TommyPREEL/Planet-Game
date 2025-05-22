@@ -1,3 +1,4 @@
+/*
 // Crée la liste des stats
 global.stat_list = ds_list_create();
 
@@ -13,7 +14,7 @@ ds_map_add(type_list, "number", "number")
 AddStat("HP bar", "red", 100, "death", 0, "bar", 500, 16, oBarHP);
 
 // Création des barres
-createBars()
+//createBars()
 
 
 //Stat definition
@@ -27,11 +28,11 @@ function AddStat(_name, _color, _value, _effect, _unlock_level, _type, _position
 		type        : _type, //stat type (ex: bar, number)
 		position_x  : _position_x, //stat position_x
 		position_y  : _position_y, //stat position_x
-		sprite_bar  : _sprite_bar //sprite bar to display
+		sprite_bar  : _sprite_bar, //sprite bar to display
     };
     ds_list_add(stat_list, stat);
 }
-
+/*
 function createBars() {
     for (var i = 0; i < ds_list_size(stat_list); ++i) {
         var stat = stat_list[| i];
@@ -41,3 +42,4 @@ function createBars() {
         }
     }
 }
+*/
