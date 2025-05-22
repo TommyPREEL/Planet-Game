@@ -26,3 +26,7 @@ if (keyboard_check_pressed(ord("I"))) {
 if (keyboard_check_pressed(ord("O"))) {
     SubtractFromResource("HP", 1);
 }
+
+if (keyboard_check_pressed(vk_tab)) {
+    show_stats = !show_stats;
+}

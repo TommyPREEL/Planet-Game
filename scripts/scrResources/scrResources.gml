@@ -18,7 +18,8 @@ function GetResource(_name) {
     return noone;
 }
 
-function AddToResource(_name, _amount) {
+function AddToResource(_name, _amount, isPopupDisplay) {
+	isPopupDisplay = (isPopupDisplay == undefined) ? true : isPopupDisplay;
     var r = GetResource(_name);
     if (r != noone) {
         var old = r.amount;
@@ -27,20 +28,24 @@ function AddToResource(_name, _amount) {
 
         if (delta != 0) {
             r.amount = new_value;
+			
+			if(isPopupDisplay) {
 
-            // Afficher popup visuel (si delta > 0 uniquement)
-            AddResourcePopup(
-                "+" + string(abs(delta)),
-                350, 20,                            // Coordonnées à adapter à ton HUD
-                c_lime,                             // Vert pour gain
-                r.icon,
-                60
-            );
+	            // Afficher popup visuel (si delta > 0 uniquement)
+	            AddResourcePopup(
+	                "+" + string(abs(delta)),
+	                350, 20,                            // Coordonnées à adapter à ton HUD
+	                c_lime,                             // Vert pour gain
+	                r.icon,
+	                60
+	            );
+			}
         }
     }
 }
 
-function SubtractFromResource(_name, _amount) {
+function SubtractFromResource(_name, _amount, isPopupDisplay) {
+	isPopupDisplay = (isPopupDisplay == undefined) ? true : isPopupDisplay;
     var r = GetResource(_name);
     if (r != noone) {
         // Vérifie qu'on a assez pour soustraire
@@ -52,16 +57,19 @@ function SubtractFromResource(_name, _amount) {
         var new_value = clamp(r.amount - _amount, 0, r.max_value);
         var delta = old - new_value;
 
-        if (delta > 0) {
+        if (delta >= 0) {
             r.amount = new_value;
+			
+			if(isPopupDisplay) {
 
-            AddResourcePopup(
-                "-" + string(abs(delta)),
-                350, 20,
-                c_red,
-                r.icon,
-                60
-            );
+	            AddResourcePopup(
+	                "-" + string(abs(delta)),
+	                350, 20,
+	                c_red,
+	                r.icon,
+	                60
+	            );
+			}
         }
     }
 }
