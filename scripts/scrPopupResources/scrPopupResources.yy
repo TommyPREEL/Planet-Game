@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrPopupResources",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrPopupResources",
+  "parent":{
+    "name":"Popups",
+    "path":"folders/Scripts/Popups.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
