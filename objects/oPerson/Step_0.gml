@@ -12,7 +12,11 @@ if (keyboard_check(global.key_right) || keyboard_check(ord("D"))) {
 	
 	// Faire tourner la planète dans le sens inverse
     with (oPlanet) {
-        image_angle -= 2; // Tourne à gauche
+		if global.selected_item = oBoots {
+			image_angle -= 4; //active le sprint
+		} else {
+			image_angle -= 2; // Tourne à droite
+		}
     }
 // Flèche de gauche appuyée
 } else if (keyboard_check(global.key_left) || keyboard_check(ord("Q"))) {
@@ -21,7 +25,11 @@ if (keyboard_check(global.key_right) || keyboard_check(ord("D"))) {
 	
 	// Faire tourner la planète dans le sens inverse
     with (oPlanet) {
-        image_angle += 2; // Tourne à gauche
+		if global.selected_item = oBoots {
+			image_angle += 4; //active le sprint
+		} else {
+			image_angle += 2; // Tourne à gauche
+		}	
     }
 } else {
 	sprite_index = sPersonIdle // Active le sprint de base

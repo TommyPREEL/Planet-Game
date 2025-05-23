@@ -13,8 +13,8 @@
   "name":"oInventory",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objets/Menu.yy",
+    "name":"Inventory",
+    "path":"folders/Objets/Inventory.yy",
   },
   "parentObjectId":{
     "name":"oMenuParent",

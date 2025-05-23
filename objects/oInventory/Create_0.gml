@@ -13,6 +13,7 @@ slot_height = 50;
 // Ajouter un objet au premier emplacement
 add_to_inventory(oWater);
 //add_to_inventory(oWater);
+add_to_inventory(oBoots);
 
 // Obtenir dimensions du sprite d’inventaire
 var sprite_h = sprite_get_height(sInventory);
