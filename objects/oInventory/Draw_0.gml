@@ -27,20 +27,14 @@ if (sprite_index == sInventoryOpen) {
 			    var cx = (rect[0] + rect[2]) / 2;
 			    var cy = rect[3]; // bas de la case
 
-				//show_debug_message("rect0 : " + string(rect[0]))
-				//show_debug_message("rect1 : " + string(rect[1]))
-				//show_debug_message("rect2 : " + string(rect[2]))
-				//show_debug_message("rect3 : " + string(rect[3]))
-				//show_debug_message("cx : " + string(cx)) // axe horizontal
-				//show_debug_message("cy : " + string(cy)) // axe vertical
-
 			    var inst = instance_create_layer(cx - 30, cy - 65, layer, global.inventory[i]);
 			    inst.depth = -100;
 			    inventory_instances[i] = inst;
 				
-				show_debug_message(slot_rectangles[i])								
+				show_debug_message(object_get_name(inventory_instances[i].object_index));
+				//show_debug_message(slot_rectangles[i])		
 			}
-		}
+	}
 } else {
 	// Détruire les objets affichés
 	for (var i = 0; i < slot_count; i++) {
@@ -70,4 +64,3 @@ if (sprite_index == sInventoryOpen && !just_opened) {
 		}
     }
 }
-

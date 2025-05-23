@@ -22,10 +22,3 @@ if (just_opened) {
 if (mouse_check_button_pressed(mb_right)) {
 	remove_from_inventory(1);
 }	
-//    if (sprite_index == sInventoryClose) {
-//        sprite_index = sInventoryOpen;
-//        just_opened = true;
-//    } else {
-//        sprite_index = sInventoryClose;
-//    }
-//}

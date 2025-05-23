@@ -46,14 +46,14 @@ for (var i = 0; i < slot_count; i++) {
 }
 
 // Fonction d’ajout d’objet dans l’inventaire
-function add_to_inventory(item_obj) {
-    for (var i = 0; i < slot_count; i++) {
-        if (global.inventory[i] == noone) {
-            global.inventory[i] = item_obj;
-            show_debug_message("Ajouté : " + string(item_obj));
-            return true;
-        }
-    }
-    show_debug_message("Inventaire plein !");
-    return false;
-}
+//function add_to_inventory(item_obj) {
+//    for (var i = 0; i < slot_count; i++) {
+//        if (global.inventory[i] == noone) {
+//            global.inventory[i] = item_obj;
+//            show_debug_message("Ajouté : " + string(item_obj));
+//            return true;
+//        }
+//    }
+//    show_debug_message("Inventaire plein !");
+//    return false;
+//}
