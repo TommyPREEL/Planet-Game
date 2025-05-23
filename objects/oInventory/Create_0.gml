@@ -4,7 +4,7 @@ event_inherited();
 sprite_index = sInventoryClose;
 
 slot_count = 6;
-inventory = array_create(slot_count, noone);
+global.inventory = array_create(slot_count, noone);
 
 slot_spacing = 10; // espacement horizontal entre les cases
 slot_width = 54;
@@ -12,10 +12,12 @@ slot_height = 50;
 
 // Ajouter un objet au premier emplacement
 add_to_inventory(oWater);
-//add_to_inventory(oWater);
+
 add_to_inventory(oBoots);
 
 add_to_inventory(oGun);
+
+add_to_inventory(oWater);
 
 // Obtenir dimensions du sprite d’inventaire
 var sprite_h = sprite_get_height(sInventory);
@@ -32,7 +34,7 @@ slot0_y = sprite_top_left_y + sprite_get_height(sInventory) / 2 + 6;  // coin ha
 // Générer les rectangles pour chaque slot
 slot_rectangles = array_create(slot_count);
 
-inventory_instances = array_create(slot_count, noone); // en plus de inventory[]
+inventory_instances = array_create(slot_count, noone); // en plus de global.inventory[]
 
 just_opened = false;
 
@@ -46,8 +48,8 @@ for (var i = 0; i < slot_count; i++) {
 // Fonction d’ajout d’objet dans l’inventaire
 function add_to_inventory(item_obj) {
     for (var i = 0; i < slot_count; i++) {
-        if (inventory[i] == noone) {
-            inventory[i] = item_obj;
+        if (global.inventory[i] == noone) {
+            global.inventory[i] = item_obj;
             show_debug_message("Ajouté : " + string(item_obj));
             return true;
         }

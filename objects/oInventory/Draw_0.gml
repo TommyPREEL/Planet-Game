@@ -20,9 +20,9 @@ if (sprite_index == sInventoryOpen) {
 	// b. Pour chaque objet dans l’inventaire, soit mis dans une case
 	for (var i = 0; i < slot_count; i++) {
 	    var rect = slot_rectangles[i];
-	    var obj_type = inventory[i];
+	    var obj_type = global.inventory[i];
 		
-			if (inventory[i] != noone && inventory_instances[i] == noone) {
+			if (global.inventory[i] != noone && inventory_instances[i] == noone) {
 			    var rect = slot_rectangles[i];
 			    var cx = (rect[0] + rect[2]) / 2;
 			    var cy = rect[3]; // bas de la case
@@ -34,7 +34,7 @@ if (sprite_index == sInventoryOpen) {
 				//show_debug_message("cx : " + string(cx)) // axe horizontal
 				//show_debug_message("cy : " + string(cy)) // axe vertical
 
-			    var inst = instance_create_layer(cx - 30, cy - 65, layer, inventory[i]);
+			    var inst = instance_create_layer(cx - 30, cy - 65, layer, global.inventory[i]);
 			    inst.depth = -100;
 			    inventory_instances[i] = inst;
 				
@@ -59,9 +59,9 @@ if (sprite_index == sInventoryOpen && !just_opened) {
         var rect = slot_rectangles[i];
         var inst = inventory_instances[i];
         if (point_in_rectangle(mouse_x, mouse_y, rect[0], rect[1], rect[2], rect[3]) && mouse_check_button(mb_left)) == true {
-			global.selected_item = inventory[i];
+			global.selected_item = global.inventory[i];
         }
-		else if (global.selected_item == inventory[i] && instance_exists(inst))
+		else if (global.selected_item == global.inventory[i] && instance_exists(inst))
 		{
 			draw_set_color(c_red);
 			var rect = slot_rectangles[i];

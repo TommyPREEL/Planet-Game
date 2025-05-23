@@ -18,7 +18,10 @@ if (just_opened) {
 	just_opened = false;
 }
 
-//if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, self)) {
+
+if (mouse_check_button_pressed(mb_right)) {
+	remove_from_inventory(1);
+}	
 //    if (sprite_index == sInventoryClose) {
 //        sprite_index = sInventoryOpen;
 //        just_opened = true;
