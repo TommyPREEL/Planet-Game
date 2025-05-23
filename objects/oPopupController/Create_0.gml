@@ -1,0 +1,1 @@
+global.popup_list = ds_list_create();
