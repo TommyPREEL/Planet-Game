@@ -42,5 +42,5 @@ if (animation_ready && !volcano_extinguished && !eruption_started) {
 // === Fin de l’éruption (frame 6 atteinte) ===
 if (image_index >= 5.9) {
     show_debug_message("Suppression du volcan");
-    instance_destroy();
+    instance_destroy(id);
 }
