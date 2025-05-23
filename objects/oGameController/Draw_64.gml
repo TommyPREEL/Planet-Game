@@ -11,7 +11,9 @@ if (keyboard_check_pressed(global.key_select_turret) && global.selected_build_po
 if (keyboard_check_pressed(global.key_select_house) && global.selected_build_point != noone) {
 	ManageInstance(oTown);
 }
-
+if (keyboard_check_pressed(ord("3")) && global.selected_build_point != noone) {
+	ManageInstance(oNuke)
+}
 
 function ManageInstance(ObjectType)
 {
