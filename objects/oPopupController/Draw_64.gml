@@ -13,3 +13,4 @@ for (var i = 0; i < ds_list_size(global.popup_list); ++i) {
     }
 }
 draw_set_alpha(1);
+draw_set_color(c_white)
