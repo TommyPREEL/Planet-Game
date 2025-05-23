@@ -6,12 +6,13 @@ sprite_index = sInventoryClose;
 slot_count = 6;
 inventory = array_create(slot_count, noone);
 
-slot_spacing = 4; // espacement horizontal entre les cases
-slot_width = 28;
-slot_height = 28;
+slot_spacing = 10; // espacement horizontal entre les cases
+slot_width = 54;
+slot_height = 50;
 
 // Ajouter un objet au premier emplacement
 add_to_inventory(oWater);
+//add_to_inventory(oWater);
 
 // Obtenir dimensions du sprite d’inventaire
 var sprite_h = sprite_get_height(sInventory);
@@ -19,11 +20,11 @@ var sprite_w = sprite_get_width(sInventory);
 
 // Calcul du coin haut gauche du sprite (origine middle left)
 var sprite_top_left_x = x;
-var sprite_top_left_y = y - sprite_h / 2;
+var sprite_top_left_y = y;
 
-// Position du coin haut gauche du premier slot (basée sur tes données exactes)
-slot0_x = sprite_top_left_x + 50;  // coin haut gauche, axe horizontal
-slot0_y = sprite_top_left_y + 50;  // coin haut gauche, axe vertical
+// Position du coin haut gauche du premier slot
+slot0_x = sprite_top_left_x + 100;  // coin haut gauche, axe horizontal
+slot0_y = sprite_top_left_y + sprite_get_height(sInventory) / 2 + 6;  // coin haut gauche, axe vertical
 
 // Générer les rectangles pour chaque slot
 slot_rectangles = array_create(slot_count);

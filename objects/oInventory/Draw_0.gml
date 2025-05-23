@@ -7,14 +7,14 @@ draw_self();
 if (sprite_index == sInventoryOpen) {
     // a. Dessiner le sprite sInventory à la bonne position
     var offset_y = sprite_get_height(sInventory) / 2;
-    draw_sprite_ext(sInventory, image_index, x, y + offset_y, image_xscale, image_yscale, 0, c_white, 1);
+    draw_sprite_ext(sInventory, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
 	
     // Dessiner les cases rouges (facultatif, pour debug)
-    draw_set_color(c_red);
-    for (var i = 0; i < slot_count; i++) {
-        var rect = slot_rectangles[i];
-        draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
-    }
+    //draw_set_color(c_red);
+    //for (var i = 0; i < slot_count; i++) {
+    //    var rect = slot_rectangles[i];
+    //    draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
+    //}
     draw_set_color(c_white);
 
 	// b. Pour chaque objet dans l’inventaire, soit mis dans une case
@@ -27,9 +27,18 @@ if (sprite_index == sInventoryOpen) {
 			    var cx = (rect[0] + rect[2]) / 2;
 			    var cy = rect[3]; // bas de la case
 
-			    var inst = instance_create_layer(cx, cy, layer, inventory[i]);
+				//show_debug_message("rect0 : " + string(rect[0]))
+				//show_debug_message("rect1 : " + string(rect[1]))
+				//show_debug_message("rect2 : " + string(rect[2]))
+				//show_debug_message("rect3 : " + string(rect[3]))
+				//show_debug_message("cx : " + string(cx)) // axe horizontal
+				//show_debug_message("cy : " + string(cy)) // axe vertical
+
+			    var inst = instance_create_layer(cx - 30, cy - 65, layer, inventory[i]);
 			    inst.depth = -100;
 			    inventory_instances[i] = inst;
+				
+				show_debug_message(slot_rectangles[i])								
 			}
 		}
 } else {
@@ -43,3 +52,20 @@ if (sprite_index == sInventoryOpen) {
 	    }
 	}
 }
+
+
+//if (sprite_index == sInventoryOpen && !just_opened && global.selected_item != "") {
+//    for (var i = 0; i < slot_count; i++) {
+//        var rect = slot_rectangles[i];
+
+//        if (point_in_rectangle(mouse_x, mouse_y, rect[0], rect[1], rect[2], rect[3]) && ev_global_left_press) {
+//            var inst = inventory_instances[i];
+//            if (instance_exists(inst)) {
+//                    draw_set_color(c_red);
+//				    var rect = slot_rectangles[i];
+//				    draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
+//			}
+//		draw_set_color(c_white);
+//        }
+//    }
+//}

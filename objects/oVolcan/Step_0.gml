@@ -30,7 +30,7 @@ if (!animation_ready && floor(image_index) >= 2) {
 if (animation_ready && !volcano_extinguished && !eruption_started) {
     eruption_timer++;
 
-    show_debug_message("Timer volcan : " + string(eruption_timer));
+    //show_debug_message("Timer volcan : " + string(eruption_timer));
 
     if (eruption_timer >= eruption_duration) {
         show_debug_message("Début de l'éruption !");
@@ -40,7 +40,7 @@ if (animation_ready && !volcano_extinguished && !eruption_started) {
 }
 
 // === Fin de l’éruption (frame 6 atteinte) ===
-if (eruption_started && image_index >= 5.9) {
-    show_debug_message("Fin de l'éruption, suppression du volcan");
+if (image_index >= 5.9) {
+    show_debug_message("Suppression du volcan");
     instance_destroy();
 }

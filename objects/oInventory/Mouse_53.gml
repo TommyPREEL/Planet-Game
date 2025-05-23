@@ -7,6 +7,7 @@ if (sprite_index == sInventoryOpen && !just_opened) {
             if (instance_exists(inst)) {
                 global.selected_item = inventory[i];
                 show_debug_message("Objet sélectionné : " + object_get_name(global.selected_item));
+				show_debug_message(inventory[i])
             }
         }
     }

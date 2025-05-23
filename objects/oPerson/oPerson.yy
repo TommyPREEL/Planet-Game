@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPersonIdle",
+    "path":"sprites/sPersonIdle/sPersonIdle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
