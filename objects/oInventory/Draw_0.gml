@@ -60,7 +60,7 @@ if (sprite_index == sInventoryOpen) {
 
 //        if (point_in_rectangle(mouse_x, mouse_y, rect[0], rect[1], rect[2], rect[3]) && ev_global_left_press) {
 //            var inst = inventory_instances[i];
-//            if (instance_exists(inst)) {
+//            if (instance_exists(inst) && global.selected_item != "") {
 //                    draw_set_color(c_red);
 //				    var rect = slot_rectangles[i];
 //				    draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
