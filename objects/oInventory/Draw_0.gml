@@ -54,18 +54,20 @@ if (sprite_index == sInventoryOpen) {
 }
 
 
-//if (sprite_index == sInventoryOpen && !just_opened && global.selected_item != "") {
-//    for (var i = 0; i < slot_count; i++) {
-//        var rect = slot_rectangles[i];
+if (sprite_index == sInventoryOpen && !just_opened) {
+    for (var i = 0; i < slot_count; i++) {
+        var rect = slot_rectangles[i];
+        var inst = inventory_instances[i];
+        if (point_in_rectangle(mouse_x, mouse_y, rect[0], rect[1], rect[2], rect[3]) && mouse_check_button(mb_left)) == true {
+			global.selected_item = inventory[i];
+        }
+		else if (global.selected_item == inventory[i] && instance_exists(inst))
+		{
+			draw_set_color(c_red);
+			var rect = slot_rectangles[i];
+			draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
+			draw_set_color(c_white);
+		}
+    }
+}
 
-//        if (point_in_rectangle(mouse_x, mouse_y, rect[0], rect[1], rect[2], rect[3]) && ev_global_left_press) {
-//            var inst = inventory_instances[i];
-//            if (instance_exists(inst) && global.selected_item != "") {
-//                    draw_set_color(c_red);
-//				    var rect = slot_rectangles[i];
-//				    draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
-//			}
-//		draw_set_color(c_white);
-//        }
-//    }
-//}

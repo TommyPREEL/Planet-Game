@@ -15,6 +15,8 @@ add_to_inventory(oWater);
 //add_to_inventory(oWater);
 add_to_inventory(oBoots);
 
+add_to_inventory(oGun);
+
 // Obtenir dimensions du sprite d’inventaire
 var sprite_h = sprite_get_height(sInventory);
 var sprite_w = sprite_get_width(sInventory);
