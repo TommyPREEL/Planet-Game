@@ -1,4 +1,4 @@
-speed = 15;
+speed = 5;
 lifetime = 600;
 fade_start_time = 500;
 fade_duration = lifetime - fade_start_time;
