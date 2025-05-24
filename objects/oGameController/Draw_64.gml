@@ -40,3 +40,7 @@ function ManageInstance(ObjectType)
 	instance_destroy(global.selected_build_point);
     global.selected_build_point = noone;
 }
+
+// Dessine le score
+draw_set_color(c_white);
+draw_text(20, 20, "Score : " + string(global.game_score));

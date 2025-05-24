@@ -22,3 +22,11 @@ if (player.hp <= 0) {
 	show_message("You Died!"); // CHANGER PAR DEATH PAGE
     room_restart();
 }
+
+// Compte le score
+score_timer += 1;
+
+if (score_timer >= room_speed) { // room_speed = nombre de steps par seconde
+    global.game_score += 1;
+    score_timer = 0;
+}
