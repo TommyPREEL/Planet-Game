@@ -13,7 +13,10 @@
     "name":"Ressources",
     "path":"folders/Objets/Deployables/Ressources.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBuildingDestroyable",
+    "path":"objects/oBuildingDestroyable/oBuildingDestroyable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

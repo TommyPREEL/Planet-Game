@@ -61,6 +61,47 @@ if (keyboard_check_pressed(global.key_add_structure)) {
     }
 }
 
+// Détection continue du bâtiment à proximité
+global.nearest_destroyable_building = noone;
+var min_dist = 999999;
+var found_building = false;
+
+with (oBuildingDestroyable) {
+    var d = point_distance(x, y, oPerson.x, oPerson.y);
+    if (d < player.detection_radius && d < min_dist) {
+        min_dist = d;
+        global.nearest_destroyable_building = id;
+        found_building = true;
+    }
+}
+
+if (!found_building) {
+    global.nearest_destroyable_building = noone; // Assure la réinitialisation
+}
+
+// Si 5 est pressé, chercher un bâtiment à proximité et le détruire
+if (keyboard_check_pressed(global.key_destroy_building)) {
+    var min_dist = 999999;
+	var bx = noone;
+	var by = noone;
+
+    if (global.nearest_destroyable_building != noone) {
+        with (global.nearest_destroyable_building) {
+			bx = x;
+            by = y;
+            instance_destroy();
+        }
+		
+		var instance = instance_create_layer(bx, by, "Instances", oBuildPoint); // refait spawn un build point
+		instance.image_xscale = 0.55;
+		instance.image_yscale = 0.53;
+		global.nearest_destroyable_building = noone;
+        show_debug_message("Building destroyed.");
+    } else {
+        show_debug_message("No buildings nearby");
+    }
+}
+
 if (shoot_cooldown > 0) {
     shoot_cooldown -= 1;
 }
