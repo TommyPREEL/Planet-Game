@@ -66,7 +66,7 @@ if (shoot_cooldown > 0) {
 }
 
 // Shooting input
-if (mouse_check_button_pressed(mb_left) && shoot_cooldown <= 0) {
+if (mouse_check_button_pressed(mb_left) && shoot_cooldown <= 0 && global.selected_item == oGun) {
     shoot_cooldown = 10; // Frames between shots
 
     var angle = point_direction(x, y, mouse_x, mouse_y);

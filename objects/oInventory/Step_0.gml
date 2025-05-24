@@ -18,7 +18,3 @@ if (just_opened) {
 	just_opened = false;
 }
 
-
-if (mouse_check_button_pressed(mb_right)) {
-	remove_from_inventory(1);
-}	
