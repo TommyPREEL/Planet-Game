@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oPerson",
+  "%Name":"oCrossHair",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oPerson",
+  "name":"oCrossHair",
   "overriddenProperties":[],
   "parent":{
     "name":"Objets",
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPersonIdle",
-    "path":"sprites/sPersonIdle/sPersonIdle.yy",
+    "name":"sCrossHair",
+    "path":"sprites/sCrossHair/sCrossHair.yy",
   },
   "spriteMaskId":null,
   "visible":true,

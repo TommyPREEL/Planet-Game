@@ -12,7 +12,11 @@ if (keyboard_check(global.key_right) || keyboard_check(ord("D"))) {
 	
 	// Faire tourner la planète dans le sens inverse
     with (oPlanet) {
-        image_angle -= 2; // Tourne à gauche
+		if global.selected_item = oBoots {
+			image_angle -= 4; //active le sprint
+		} else {
+			image_angle -= 2; // Tourne à droite
+		}
     }
 // Flèche de gauche appuyée
 } else if (keyboard_check(global.key_left) || keyboard_check(ord("Q"))) {
@@ -21,10 +25,14 @@ if (keyboard_check(global.key_right) || keyboard_check(ord("D"))) {
 	
 	// Faire tourner la planète dans le sens inverse
     with (oPlanet) {
-        image_angle += 2; // Tourne à gauche
+		if global.selected_item = oBoots {
+			image_angle += 4; //active le sprint
+		} else {
+			image_angle += 2; // Tourne à gauche
+		}	
     }
 } else {
-	sprite_index = sPersonTest // Active le sprint de base
+	sprite_index = sPersonIdle // Active le sprint de base
 }
 
 if (keyboard_check_pressed(global.key_add_structure)) {
@@ -51,4 +59,17 @@ if (keyboard_check_pressed(global.key_add_structure)) {
         global.selected_build_point = noone;   // nothing close enough
         show_debug_message("No build-point in range");
     }
+}
+
+if (shoot_cooldown > 0) {
+    shoot_cooldown -= 1;
+}
+
+// Shooting input
+if (mouse_check_button_pressed(mb_left) && shoot_cooldown <= 0) {
+    shoot_cooldown = 10; // Frames between shots
+
+    var angle = point_direction(x, y, mouse_x, mouse_y);
+    var bullet = instance_create_layer(x, y, "Instances", oBulletPlayer);
+    bullet.direction = angle;
 }

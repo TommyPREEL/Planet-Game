@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oPerson",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oGun",
+  "eventList":[],
   "managed":true,
-  "name":"oPerson",
+  "name":"oGun",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Inventory",
+    "path":"folders/Objets/Inventory.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPersonIdle",
-    "path":"sprites/sPersonIdle/sPersonIdle.yy",
+    "name":"sGun",
+    "path":"sprites/sGun/sGun.yy",
   },
   "spriteMaskId":null,
   "visible":true,
