@@ -76,6 +76,7 @@
   "resources":[
     {"id":{"name":"pTexteMenu","path":"fonts/pTexteMenu/pTexteMenu.yy",},},
     {"id":{"name":"oBarHP","path":"objects/oBarHP/oBarHP.yy",},},
+    {"id":{"name":"oBuildingDestroyable","path":"objects/oBuildingDestroyable/oBuildingDestroyable.yy",},},
     {"id":{"name":"oBuildPoint","path":"objects/oBuildPoint/oBuildPoint.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
     {"id":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},},

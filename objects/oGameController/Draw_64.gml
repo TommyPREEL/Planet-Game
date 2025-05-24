@@ -5,6 +5,11 @@ if (global.selected_build_point != noone) {
     draw_text(50, 50, "Press " + keyname(global.key_select_turret) + " to build Turret\n" + "Press " + keyname(global.key_select_house) + " to build Town");
 }
 
+// Affiche le texte de déstruction proche d'un batiment destructible
+if (global.nearest_destroyable_building != noone) {
+    draw_text(50, 50, "Press " + keyname(global.key_destroy_building) + " to destroy the building");
+}
+
 if (keyboard_check_pressed(global.key_select_turret) && global.selected_build_point != noone) {
 	ManageInstance(oTurret);
 }

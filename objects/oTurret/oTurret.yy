@@ -12,7 +12,10 @@
     "name":"Defense",
     "path":"folders/Objets/Deployables/Defense.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBuildingDestroyable",
+    "path":"objects/oBuildingDestroyable/oBuildingDestroyable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

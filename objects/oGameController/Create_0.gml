@@ -1,4 +1,5 @@
 global.selected_build_point = noone;
+global.nearest_destroyable_building = noone;
 
 global.player = {
 	hp: 10,
