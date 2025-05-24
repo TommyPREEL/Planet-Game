@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrShield",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrShield",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Scripts/Resources/Shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
