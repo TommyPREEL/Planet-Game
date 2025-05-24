@@ -16,10 +16,10 @@ function AddEvent(_name, _weight, _difficulty, _type, _unique, _cooldown, _callb
     ds_list_add(event_list, ev);
 }
 
-AddEvent("Meteor Strike", 100, 1, "bad", false, 60, scrMeteorStrike);
-AddEvent("Dmg 1", 30, 1, "bad", false, 0, scrDmg);
-AddEvent("Alien Attack", 30, 1, "bad", true, 0, scrAlienAttack);
-AddEvent("Airdrop", 10, 1, "good", false, 1000, scrAirdrop);
+AddEvent("Meteor Strike", 0, 1, "bad", false, 60, scrMeteorStrike);
+AddEvent("Dmg 1", 0, 1, "bad", false, 0, scrDmg);
+AddEvent("Alien Attack", 0, 1, "bad", true, 0, scrAlienAttack);
+AddEvent("Airdrop", 0, 1, "good", false, 1000, scrAirdrop);
 AddEvent("Volcan", 10, 1, "bad", false, 60, scrVolcan);
 
 /// Helper ----------------------------------------------------
