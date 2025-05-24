@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oNuke",
+  "%Name":"oSawmill",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oNuke",
+  "name":"oSawmill",
   "overriddenProperties":[],
   "parent":{
     "name":"Ressources",
@@ -35,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNuke",
-    "path":"sprites/sNuke/sNuke.yy",
+    "name":"sSawmill",
+    "path":"sprites/sSawmill/sSawmill.yy",
   },
   "spriteMaskId":null,
   "visible":true,

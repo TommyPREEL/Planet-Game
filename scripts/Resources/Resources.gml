@@ -1,11 +1,11 @@
 function AddResource(_name, _amount, _max, _regen, _regen_rate, _icon) {
     var res = {
-        name       : _name,         // Nom de la ressource
-        amount     : _amount,       // Quantité actuelle
-        max_value  : _max,          // Valeur maximale
-        regen      : _regen,        // bool: régénère ou non
-        regen_rate : _regen_rate,   // taux de régénération par tick (ou frame)
-		icon       : _icon          // Icône à afficher dans les popups (optionnel)
+        name               : _name,
+        amount             : _amount,
+        max_value          : _max,
+        regen              : _regen,
+        regen_rate         : _regen_rate,
+        icon               : _icon,
     };
     ds_list_add(global.resource_list, res);
 }

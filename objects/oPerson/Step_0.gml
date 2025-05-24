@@ -79,7 +79,7 @@ if (!found_building) {
     global.nearest_destroyable_building = noone; // Assure la réinitialisation
 }
 
-// Si 5 est pressé, chercher un bâtiment à proximité et le détruire
+// Si la touche destroy est pressé, chercher un bâtiment à proximité et le détruire
 if (keyboard_check_pressed(global.key_destroy_building)) {
     var min_dist = 999999;
 	var bx = noone;
@@ -89,6 +89,12 @@ if (keyboard_check_pressed(global.key_destroy_building)) {
         with (global.nearest_destroyable_building) {
 			bx = x;
             by = y;
+			bname = name;
+			
+			if (ds_map_exists(global.resource_buildings, bname)) {
+				destroyResourceBuilding(bname);
+			}
+			
             instance_destroy();
         }
 		

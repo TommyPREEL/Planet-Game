@@ -5,5 +5,6 @@ if (is_active == false /* add check if hammer equiped */) {
 		sprite_index = sNuke
 		draw_self()
 		meltdown_timer = 0
+		activateResourceBuilding("Nuke");
 	}
 }

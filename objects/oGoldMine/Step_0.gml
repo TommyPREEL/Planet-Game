@@ -1,14 +1,3 @@
-meltdown_timer += 1;
-var three_minutes = 60*10
-
-if (meltdown_timer >= three_minutes) {
-	is_active = false;
-	sprite_index = sInactiveNuke
-	meltdown_timer = 0;
-	// disable energy generation
-	deactivateResourceBuilding("Nuke");
-}
-
 if (instance_exists(planet_id)) {
     // Recalcule la position par rotation des coordonnées locales
     var c = dcos(planet_id.image_angle);

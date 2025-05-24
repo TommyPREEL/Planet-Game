@@ -14,17 +14,6 @@ for (var i = 0; i < ds_list_size(global.resource_list); ++i) {
 }
 
 // Exemples d'utilisation
-if (keyboard_check_pressed(ord("P"))) {
-    SubtractFromResource("Energy", 20);
-}
-
-if (keyboard_check_pressed(ord("I"))) {
-    AddToResource("Energy", 10);
-}
-
-if (keyboard_check_pressed(ord("O"))) {
-    SubtractFromResource("HP", 1);
-}
 
 if (keyboard_check_pressed(vk_tab)) {
     show_stats = !show_stats;

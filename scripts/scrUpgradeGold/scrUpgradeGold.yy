@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrUpgradeGold",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrUpgradeGold",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Scripts/Resources/Shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -32,6 +32,10 @@ function SetKey(key) {
 		            case 2: global.key_add_structure = key; break;
 		            case 3: global.key_select_turret = key; break;
 		            case 4: global.key_select_house = key; break;
+					case 5: global.key_select_nuke = key; break;
+					case 6: global.key_select_gold_mine = key; break;
+					case 7: global.key_select_sawmill = key; break;
+					case 8: global.key_destroy_building = key; break;
 		        }
 		        editing_key_index = -1;
 		    }

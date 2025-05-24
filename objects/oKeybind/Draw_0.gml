@@ -17,7 +17,11 @@ var binds = [
     ["Droite", global.key_right],
     ["Ajouter structure", global.key_add_structure],
     ["Sélection tourelle", global.key_select_turret],
-    ["Sélection maison", global.key_select_house]
+    ["Sélection maison", global.key_select_house],
+	["Sélection reacteur", global.key_select_nuke],
+	["Sélection mine d'or", global.key_select_gold_mine],
+	["Sélection scierie", global.key_select_sawmill],
+	["Détruire bâtiment", global.key_destroy_building],
 ];
 
 // En-têtes
