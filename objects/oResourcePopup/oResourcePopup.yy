@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Popups",
-    "path":"folders/Objets/Popups.yy",
+    "path":"folders/Objets/Musiques/Popups.yy",
   },
   "parentObjectId":null,
   "persistent":false,

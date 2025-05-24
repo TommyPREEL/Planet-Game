@@ -32,6 +32,8 @@ global.volume = 0;
 
 global.is_paused = false;
 
+global.selected_item = "";
+
 window_set_fullscreen(false);
 var w = display_get_width();
 var h = display_get_height();

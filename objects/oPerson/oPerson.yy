@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPersonTest",
-    "path":"sprites/sPersonTest/sPersonTest.yy",
+    "name":"sPersonIdle",
+    "path":"sprites/sPersonIdle/sPersonIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

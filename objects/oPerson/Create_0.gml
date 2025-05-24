@@ -5,3 +5,4 @@ globalvar DETECTION_RADIUS;
 DETECTION_RADIUS = 20; 
 globalvar player;
 globalvar nearest_destroyable_building;
+shoot_cooldown = 0;
