@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrWater",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrWater",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Scripts/Resources/Shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

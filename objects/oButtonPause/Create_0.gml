@@ -2,5 +2,5 @@
 event_inherited();
 
 // Initialisation
-is_paused = false;
+is_paused = global.is_paused;
 sprite_index = sButtonPauseInactif;
